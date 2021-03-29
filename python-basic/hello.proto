@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service BasicService {
+    rpc BasicFunction(BasicRequest) returns(BasicResponse) {}
+}
+
+message BasicRequest {
+    string request = 1;
+}
+
+message BasicResponse {
+    string response = 1;
+}
